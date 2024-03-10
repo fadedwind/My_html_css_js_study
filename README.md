@@ -1,2 +1,1 @@
-# My_html_study
-my html study
+# My_html_cs_js study
