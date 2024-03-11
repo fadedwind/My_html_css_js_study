@@ -1,0 +1,100 @@
+@font-face {
+
+    src: url(/fonts/NotoSerif-VariableFont_wdth,wght.ttf);    
+    font-family: NotoSerif;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin:0;
+}
+
+header{
+    background-color: hsl(0, 0%, 73%);
+    text-align:center;
+    padding: 25px;
+}
+.navbar{
+    background-color: hsl(0, 0%, 0%);
+    height:50px;
+}
+aside{
+    width:20%;
+    float: left;
+    padding:10px;
+}
+section{
+    width:40%;
+    float: left;
+    padding:10px;
+}
+article{
+    width:40%;
+    float: left;
+    padding:10px;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: hsl(0, 0%, 73%);
+    text-align:center;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px){
+    aside,section,article{
+        width: 100%;
+    }
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-family: "verdana", "arial";
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+h3{
+    color: rgb(0, 0, 0);
+}
+h4{
+    color: rgb(0, 0, 0);
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: "lucida console", "courier new";
+    font-size: 14px;
+    font-style: italic;
+
+}
+pre{
+    color: rgb(0, 0, 0);
+}
+
+#p1{
+    color: red;
+}
+#p2{
+    color: orange;
+}
+#p3{
+    color: yellow;
+}
+#p4{
+    color: rgb(0, 0, 0);
+}
+

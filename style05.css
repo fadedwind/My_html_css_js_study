@@ -1,0 +1,124 @@
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 100%, 62%);
+    font-size: 13em;
+    text-align: slideLeft;
+    text-align: center;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+@keyframes slideLeft{
+    from{transform: translateX(250%)};
+}
+@keyframes slideRight{
+    to{transform: translateX(250%)};
+}
+@keyframes slideUp{
+    from{transform: translateX(250%)};
+}
+@keyframes slideDown{
+    to{transform: translateX(250%)};
+}
+@keyframes rotate{
+    100%{transform: rotateZ(360deg);}
+}
+@keyframes grow{
+    100%{transform: scale(2,2)}
+}
+@keyframes shrink{
+    100%{transform: scale(0.5,0.5)}
+}
+@keyframes fade{
+    50%{opacity: 0}
+}
+@keyframes colorchange{
+    0%{background-color: rgb(255, 71, 138);}
+    20%{background-color: rgb(255, 157, 46);}
+    40%{background-color: rgb(238, 255, 0);}
+    60%{background-color: rgb(60, 255, 53);}
+    80%{background-color: rgb(48, 248, 255);}
+    100%{background-color: rgb(235, 135, 255);}
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px hsl(60, 100%, 53%);}
+}
+
+body{
+    background-color: rgb(31, 30, 30);
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 5px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 30%);
+}
+.gallery img{
+    width:200px;
+    height:auto;
+}
+
+#container{
+    border: 2px solid;
+    padding: 8px;
+}
+#container > p{
+    background-color: hsl(60, 100%, 63%);
+}
+#container ~ p{
+    background-color: hsl(167, 100%, 55%);
+}
+
+a:link{
+    color: hsl(221, 100%, 74%);
+
+}
+a:hover{
+    color: hsl(172, 88%, 80%);
+    font-size: 1.1em;
+}
+a:active{
+    color:blue;
+    font-size: 1.1em;
+}
+a:visited{
+    color:grey;
+}
+
+li:hover{
+    background-color: bisque; 
+    padding: 8px;   
+}
+li:nth-child(11n){
+    background-color: hsl(172, 88%, 80%);
+}
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+p::first-line{
+    background-color: rgb(30, 255, 184);
+}
+p::selection{
+    color: rgb(31, 201, 28);
+    background-color: rgb(61, 61, 18);
+}
+
+#groceries li::before{
+    content: "✔️";
+}
+#eggs::after{
+    content:"🥚";
+}

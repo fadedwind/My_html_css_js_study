@@ -1,0 +1,45 @@
+#box1{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size:13em;
+    text-align: center;
+    background-color: aquamarine;
+
+    transform: translateX(100%);
+    transform: rotateZ(90deg);
+    transform: scale(0.75);
+    transform: skewX(30deg);
+}
+img{
+    transform: translateX(70%) rotateZ(180deg);
+}
+
+body{
+    background-color: rgb(189, 235, 255);
+}
+h1{
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+    border-radius: 10px;
+    color: rgb(255,255,255);
+}
+p{
+    border-bottom: 3px solid rgb(245, 154, 17);
+    border-top: 3px solid rgb(255,255,35);
+    border-left: 3px dotted rgb(255, 73, 103);
+    border-right: 3px dotted rgb(144, 255, 144);
+
+    border-radius: 8px;
+}
+.odd{
+    border: 3px outset #81ffcf;
+    border-width: 2px;
+    color: #ffffff;
+}
+.even{
+    border-style: double;
+    border-width: 2px;
+    color: hsl(283, 100%, 85%)
+}

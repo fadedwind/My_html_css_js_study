@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content: flex-strat;
+    column-gap: 1em;
+    row-gap: 3em;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align:center;
+    border-radius: 15px;
+    order: -1;
+}
+#box1{
+    background-color:hsl(0, 100%, 70%);
+}
+#box2{
+    background-color:hsl(40, 100%, 70%);
+}
+#box3{
+    background-color:hsl(80, 100%, 70%);
+}
+#box4{
+    background-color:hsl(120, 100%, 70%);
+}
+
+body{
+    display: flow-root;
+}
+
+#img1{
+    float: right;
+    margin-right: 10px;
+}
+#img2{
+    float: left;
+    margin-right: 10px;
+}

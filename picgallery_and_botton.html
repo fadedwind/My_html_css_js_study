@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>button</title>
+        <link rel="stylesheet" href="style05.css">
+    </head>
+    
+
+    <body>
+        <a href="https://google.com"><b>Google</b></a><br>
+
+        <a href="https://bilibili.com">
+            <button style="font-size:25px; background-color:lightblue; color:crimson; border-radius:25px;">click me</button>
+        </a>
+
+        <br>
+
+        <button onclick="doSomething()" style="font-size:25px; background-color:lightpink; color:crimson; border-radius:25px;">click me</button>
+        
+        <p id="greeting">hello</p>
+        
+        <script>
+            function doSomething(){
+                document.getElementById("greeting").innerHTML = "goodbye";
+            }
+        </script>
+
+        <div class="gallery">
+            <a target="_balnk" href="scenery/22576754_p0_master1200.jpg">
+            <img src="scenery/22576754_p0_master1200.jpg" alt="scene01" width="200"></a>
+            <div class="description">scene001</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_balnk" href="scenery/75993815_p0_master1200.jpg">
+            <img src="scenery/75993815_p0_master1200.jpg" alt="scene01"></a>
+            <div class="description">scene002</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_balnk" href="scenery/79044784_p0_master1200.jpg">
+            <img src="scenery/79044784_p0_master1200.jpg" alt="scene01"></a>
+            <div class="description">scene003</div>
+        </div>
+
+    </body>
+</html>
