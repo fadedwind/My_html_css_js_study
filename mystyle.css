@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+header {
+    background: linear-gradient(to right, hsl(284, 90%, 15%), hsl(154, 75%, 40%), hsl(34, 90%, 50%));
+    text-align:center;
+    padding: 9px;
+}
+
+.fadedwind {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em; /* 调整这个值来改变字体大小 */
+}
+
+body{
+    color:rgb(0, 0, 0);
+    margin:0px;
+    background-image: url("images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #ffabdd; /* 将这里的颜色值替换为你想要的颜色 */
+    font-size: 90px; /* 增大字体大小 */
+}
+
+footer {
+    color:rgb(255, 255, 255);
+    background: linear-gradient(to right, hsl(284, 90%, 15%), hsl(154, 75%, 40%), hsl(34, 90%, 50%));
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0; /* 调整这个值来改变footer的内部空间 */
+    margin: 10px 0; /* 调整这个值来改变footer与其他元素的距离 */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row; /* 将元素排列在一行 */
+    align-items: flex-start; /* 将元素靠上对齐 */
+    justify-content: space-between; /* 在元素之间添加空间 */
+}
+
+.footer-image {
+    float: right;
+    clear: both;
+}
+
+.profile_pic_left {
+    float: left;
+}
+
+.profile_pic_right {
+    float: right;
+}
+
+/* 未访问的链接 */
+a:link {
+    color: rgb(255, 255, 14);
+}
+
+/* 用户已访问的链接 */
+a:visited {
+    color: white;
+}
+
+/* 鼠标悬停在链接上 */
+a:hover {
+    color: rgb(140, 130, 255);
+}
+
+/* 正在被点击的链接 */
+a:active {
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+h1{ 
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0,0%,25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0,0%,15%);
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar a, .navbar .button {
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.navbar a:hover, .navbar .button:hover {
+    background-color: #555;
+}
+
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a.active{
+    background-color: rgb(138, 165, 252);
+    font-weight:bold;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active){
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    background-color: rgb(201, 167, 234);
+    border-radius: 10px;
+    color:rgb(93, 90, 252);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display:none;
+    position: absolute;
+    background-color: rgb(243, 236, 236);
+    min-width: 100px;
+    box-shadow:2px 2px 5px rgba(46, 0, 0, 0.361);
+}
+
+
+.dropdown .content a {
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown .content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover button{
+    background-color: hsl(0,0%,75%);
+}
+
+.dropdown a:hover{
+    background-color: hsl(0,0,75%);
+}
+
+.blog-post {
+    position: relative;
+    padding-left: 50px; /* Adjust as needed */
+}
+.blog-post::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    z-index: 1;
+}
