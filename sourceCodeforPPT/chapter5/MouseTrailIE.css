@@ -1,0 +1,10 @@
+/* MouseTrailIE.css */
+/* Height of div can be made no less than the font height in IE6. */
+
+.mouseTrailClass { 
+   background-color:green;
+   height:3px; width:3px;
+   font-size:2px;
+   position:absolute;
+   left:0; top:0;
+   display:none }

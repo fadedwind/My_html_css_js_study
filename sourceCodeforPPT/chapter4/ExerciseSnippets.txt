@@ -1,0 +1,82 @@
+4.2
+var i=5;
+function duh()
+{
+   var i;
+   window.i=6;
+}
+duh();
+window.alert(i);
+
+4.3
+Number("007") == "007"
+
+4.4
+var o1 = new Object();
+o1.j = 9;
+var o2 = o1;
+function test(o1)
+{
+  o1.j=10;
+  return;
+}
+test(o1);
+window.alert(o2.j);
+
+4.6
+var weird = "al" + "father".slice(4, 6) + "t";
+window[weird]("Weird, but it works.");
+
+4.9
+function addTo(value) {
+  myVar += value;
+  return;
+}
+// Create an object with property myVar
+// and method addTo
+var o = new Object();
+o.myVar = 0;
+o.addTo = addTo;
+
+// Call the addTo method
+o.addTo(12);
+
+4.10
+function rusty(a) {
+  this.x = a;
+  return;
+}
+var o1 = new Object();
+var o2 = new Object();
+o1.rusty = rusty;
+o2.rusty = o1.rusty;
+o1.rusty(1);
+o2.rusty(2);
+window.alert(o1.x + "," + o2.x);
+
+4.13
+var answer = window.prompt("Enter a number", "");
+if (answer < 0) {
+  isNeg = true;
+}
+window.alert("Number is negative: " + isNeg);
+
+4.17
+function simple () {
+  this.count = 10;
+}
+var anObj = new Object();
+simple.call(anObj);
+
+4.18
+var expr = window.prompt("Enter an arithmetic expression", "");
+window.alert(eval(expr));
+
+4.19
+// makeAdd.js
+function makeAdd(op1) {
+  return function (op2) { return op1 + op2; };
+}
+var add4 = makeAdd(4);
+window.alert(add4(6));
+

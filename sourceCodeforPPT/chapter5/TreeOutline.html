@@ -1,0 +1,28 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      TreeOutline.html
+    </title> 
+    <!-- Import treeOutline() function -->
+    <script type="text/javascript" src="TreeOutline.js">
+    </script>
+  </head> 
+  <body>
+    <p>
+      Text within a "p" element.
+    </p>
+    <ol>
+      <li>First element of ordered list.</li>
+      <li>Second element.</li>
+    </ol>
+    <!-- Call function producing an outline of this document's
+         element tree -->
+    <form action="">
+      <p><input type="button" name="button" value="Click to see outline"
+                      onclick="window.alert(treeOutline());" /></p>
+    </form>
+  </body> 
+</html>

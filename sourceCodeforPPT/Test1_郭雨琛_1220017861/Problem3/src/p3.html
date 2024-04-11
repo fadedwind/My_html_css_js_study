@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Product Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Online Product Ordering System</h1>
+    
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Shipping Information</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" size="30" /></td>
+                </tr>
+                <tr>
+                    <td><label for="street">Street:</label></td>
+                    <td><input type="text" id="address" name="address" size="50" /></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" size="20" /></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" name="state" size="10" /></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip:</label></td>
+                    <td><input type="text" id="zip" name="zip" size="10" /></td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+        <fieldset class="form-group">            <legend>Billing Information</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" size="30" /></td>
+                </tr>
+                <tr>
+                    <td><label for="street">Street:</label></td>
+                    <td><input type="text" id="address" name="address" size="50" /></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" size="20" /></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" name="state" size="10" /></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip:</label></td>
+                    <td><input type="text" id="zip" name="zip" size="10" /></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Credit Card Information:</legend>
+            Card Type:
+            <select name="cardType">
+                <option value="" selected>Select a Credit Card</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="amex">American Express</option>
+                <option value="discover">Discover</option>
+            </select><br />
+            <table>
+                <tr>
+                    <td><label for="cardNumber">Card Number:</label></td>
+                    <td><input type="text" id="cardNumber" name="cardNumber" /></td>
+                </tr>
+                <tr>
+                    <td><label for="expirationDate">Expiration Date:(mm/yy)</label></td>
+                    <td><input type="text" id="expirationDate" name="expirationDate" size="10"/></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Contact Information:</legend>
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" /></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNumber">Phone Number:</label></td>
+                    <td><input type="tel" id="phoneNumber" name="phoneNumber" /></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Options:</legend>
+            Please keep me informed about further product offerings.<input type="checkbox" name="keepInformed" checked /> <br />
+        </fieldset>
+        
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+    </form>
+</body>
+</html>

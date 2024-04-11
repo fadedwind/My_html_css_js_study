@@ -1,0 +1,14 @@
+/* span-box-style.css */
+/* px is "pixel" unit of length.
+   silver is name of a color.
+   solid is a border style (as opposed to dashed, say).
+   cm is centimeters. */
+span { margin-left: 1cm; 
+       border-left-width: 10px;
+       border-left-color: silver;
+       border-left-style: solid;
+       padding-left: 0.5cm;
+       border-right-width: 5px;
+       border-right-color: silver;
+       border-right-style: solid }
+

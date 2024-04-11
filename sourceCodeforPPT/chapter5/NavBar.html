@@ -1,0 +1,74 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      NavBar.html
+    </title>
+    <!--
+      Style sheet for navbar table:
+      - Table borders collapse so that the rules between
+          cells appear no thicker than surrounding border.
+      - Normal background of each table element is gray.
+      - Links (visited or not) are white with no underlining.
+    -->
+    <style type="text/css">
+      .navbar { border-collapse:collapse }
+      .navbar td { background-color:gray; 
+                   border:1px solid black }
+      .navbar a:visited, 
+        .navbar a:link { color:white; text-decoration:none }
+    </style>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <script type="text/javascript" src="NavBar.js">
+    </script>
+  </head> 
+  <!-- Table with one row consisting of two elements.
+       Left element is table of links ("navbar").
+       Right element is main document content. -->
+  <body>
+    <table border="0" rules="0" cellpadding="5">
+      <tbody>
+        <tr style="vertical-align:top">
+          <td> <!-- Navbar -->
+            <table cellpadding="3" cellspacing="0" class="navbar">
+              <tbody>
+                <tr>
+                  <td onmouseover="highlight(this);"
+                    onmouseout="lowlight(this);"><a
+                      href="http://www.example.com"
+                      >Home</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td onmouseover="highlight(this);"
+                    onmouseout="lowlight(this);"><a
+                      href="http://www.example.org"
+                      >Products</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color:gray"
+                    onmouseover="changeLight(this);"
+                    onmouseout="changeLight(this);"><a
+                      href="http://www.example.net"
+                      >Purchase</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td> <!-- main content -->
+            <p style="margin-top:0">
+              This is the main content of the page.
+              It is very interesting content.
+              Many people should visit this page to read
+              this content.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body> 
+</html> 

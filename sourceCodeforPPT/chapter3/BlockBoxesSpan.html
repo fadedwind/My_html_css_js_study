@@ -1,0 +1,30 @@
+ <!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      BlockBoxesSpan.html
+    </title> 
+    <style type="text/css">
+      html, body { border:solid red thin } 
+      html { border-width:thick }
+      body { padding:15px }
+      div { margin:0px; padding:15px; border:solid black 2px }
+      .shade { background-color:aqua }
+      .topMargin { margin-top:10px }
+    </style>
+  </head> 
+  <body> 
+    <div id="d1">
+      <div id="d2">
+        <div id="d3" class="shade">
+          Here are 
+          <span style="border:dotted silver 10px">some</span>
+          lines of text.
+        </div>
+      </div>
+      <div id="d4" class="shade topMargin"></div>
+    </div>
+  </body> 
+</html> 

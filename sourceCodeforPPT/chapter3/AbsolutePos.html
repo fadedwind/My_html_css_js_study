@@ -1,0 +1,30 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      AbsolutePos.html
+    </title> 
+    <style type="text/css">
+      p { position:relative; margin-left:10em }
+      .marginNote { position:absolute;
+                    top:0; left:-10em; width:8em; 
+                    background-color:yellow }
+    </style>
+  </head> 
+  <body> 
+    <p>
+      This is the first paragraph.  No note here.
+    </p> 
+    <p>
+      This second paragraph has a note.
+      <span class="marginNote">This note is pretty long, so
+      it could cause trouble...</span>
+    </p>
+    <p>
+      This third paragraph also has a note.
+      <span class="marginNote">A short note.</span>
+    </p>
+  </body> 
+</html> 

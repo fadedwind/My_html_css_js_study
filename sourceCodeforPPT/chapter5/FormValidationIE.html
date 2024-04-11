@@ -1,0 +1,23 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      FormValidationIE.html
+    </title> 
+    <script type="text/javascript" src="FormValidationIE.js">
+    </script>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  </head> 
+  <body onload="addListeners();">
+    <form id="validatedForm" action="http://www.example.com">
+      <p>
+        <label>Required input:
+          <input type="text" name="requiredField" id="requiredField" />
+        </label>
+        <input type="submit" name="submit" value="Click to submit" />
+      </p>
+    </form>
+  </body> 
+</html> 

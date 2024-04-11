@@ -1,0 +1,8 @@
+/* MouseTrail.css */
+
+.mouseTrailClass { 
+   background-color:green;
+   height:3px; width:3px;
+   position:absolute;
+   left:0; top:0;
+   display:none }

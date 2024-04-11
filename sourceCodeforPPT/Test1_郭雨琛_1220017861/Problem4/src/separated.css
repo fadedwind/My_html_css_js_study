@@ -1,0 +1,14 @@
+table{
+    border-top-width: medium;
+    border-bottom-width: thick;
+    border-top-color: #ff0000;
+    border-bottom-color: #0000ff;
+    border-top-style: dotted;
+    border-bottom-style: dashed;
+}
+
+p{
+    border-style:dashed;
+    border-width:thin;
+    border-color:#008000;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      EventHello.html
+    </title> 
+    <script type="text/javascript" src="EventHello.js">
+    </script>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  </head> 
+  <body>
+    <p>
+      <button id="msgButton" type="button">
+        Click for a message!
+      </button>
+      <script type="text/javascript">
+        var button = window.document.getElementById("msgButton");
+        button.addEventListener("click", sayHello, false);
+      </script>
+    </p>
+  </body> 
+</html> 

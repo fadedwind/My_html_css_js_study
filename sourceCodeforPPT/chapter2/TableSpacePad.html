@@ -1,0 +1,85 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      TableSpacePad.html
+    </title> 
+  </head> 
+  <body> 
+    <table border="1" cellpadding="5">
+      <tr>
+        <th>cellspacing</th><th>cellpadding</th><th>Example</th>
+      </tr>
+      <tr>
+        <td>10</td><td>10</td>
+        <td id="nested">
+          <table border="1" cellspacing="10" cellpadding="10">
+            <tr>
+              <td>
+                <img src="CFP1.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="67" />
+              </td>
+              <td>
+                <img src="CFP2.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="45" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>0</td><td>10</td>
+        <td>
+          <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+              <td>
+                <img src="CFP1.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="67" />
+              </td>
+              <td>
+                <img src="CFP2.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="45" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>10</td><td>0</td>
+        <td>
+          <table border="1" cellspacing="10" cellpadding="0">
+            <tr>
+              <td>
+                <img src="CFP1.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="67" />
+              </td>
+              <td>
+                <img src="CFP2.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="45" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>0</td><td>0</td>
+        <td>
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <img src="CFP1.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="67" />
+              </td>
+              <td>
+                <img src="CFP2.png" style="display:block" 
+                  alt="Cucumber and Flower Pot" height="86" width="45" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

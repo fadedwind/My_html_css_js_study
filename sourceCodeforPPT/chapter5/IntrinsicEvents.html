@@ -1,0 +1,31 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      IntrinsicEvents.html
+    </title> 
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  </head> 
+  <body onload="window.alert('Body loaded.');" 
+        onunload="window.alert('Unloading...');">
+    <form action="http://www.example.org"
+          onsubmit="window.alert('Submitting...');"
+          onreset="window.alert('Resetting...');">
+      <p>
+        <input type="text" name="someText"
+               onkeypress="window.alert('Text field got character.');" 
+               onselect="window.alert('Text selected.');" />
+        <br />
+        <input type="button" name="aButton" value="Click Me"
+               onclick="window.alert('Button clicked.');" />
+        <br />
+        <input type="submit" name="aSubmit" value="Submit" 
+               onfocus="window.alert('Submit button got focus.');" />
+        <input type="reset" name="aReset" value="Reset" />
+      </p>
+      
+    </form>
+  </body> 
+</html> 

@@ -1,0 +1,24 @@
+Ex: Web Technologies A Computer Science Perspective|Chapter6|CaseStudy
+Software: NetBean 4.1
+
+I have run this case study and it is OK.
+
+Something should be noted:
+
+After Set up an empty project (say, Project1) selecting web application, you need to do the following:
+
+1.Place the whoel fold MOBFiles to Project1|web
+2.Place only .java source files in classes to Project1|src|java
+ 2a. SetUp a mapping in web|web.xml|servlet for each java class. You can run the example program to see how to setup a mapping, such as, Login <---> /servlet/Login
+ 2b. Revise the path in some src|java files, say,  change "/MOBFiles/login.html" in Login.java to "/Project1/MOBFiles/login.html".
+     Specifially, you possibly need some changes in Project1|src|java|DataStore.java, say,
+     change
+         private static File dataStore = new File("MyOwnBlog.ser");
+     to
+         private static File dataStore = new File("c:\\MyOwnBlog.ser");
+ 2c. right-click, Run java or html Files in the corresponding menus.
+
+
+
+
+

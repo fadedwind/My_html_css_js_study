@@ -1,0 +1,45 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Add entry to My Own Blog!</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Add an entry to My Own Blog!</h1>
+    <p>
+      Instructions: Enter a title and body for your blog entry.  In
+      the body, you can use simple HTML formatting elements, such as
+      &lt;b&gt; (bold) and &lt;i&gt; (italic) as well as the hyperlink
+      "anchor" element &lt;a&gt;.
+    </p>
+    <form action="AddEntry" method="post">
+      <table border="0">
+        <tbody>
+          <tr>
+            <td>Title:</td>
+            <td><input type="text" name="title" size="60" /></td>
+          </tr>
+          <tr>
+            <td style="vertical-align:top">Body:</td>
+            <td>
+              <textarea name="entry" cols="60" rows="10"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>
+              <input type="button" name="preview"
+                     value="Preview" />
+              <input type="submit" name="addentry" 
+                     value="Add Entry" />
+              <input type="reset" name="cancel"
+                     value="Clear" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

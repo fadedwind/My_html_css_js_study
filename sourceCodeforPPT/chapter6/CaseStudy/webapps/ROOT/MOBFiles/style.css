@@ -1,0 +1,118 @@
+/* style.css */
+/* The W3C Core Styles Copyright (c) 1998 W3C (mit, inria, Keio), All
+Rights Reserved. W3C liability, trademark, document use and software
+licensing rules apply. See
+http://www.w3.org/Consortium/Legal/ipr-notice.html
+
+This is a modified version of the Oldstyle style sheet available
+at http://www.w3.org/StyleSheets/Core/
+A list of modifications made to the original Oldstyle style sheet is 
+at http://www.mathcs.duq.edu/~jackson/webtech/OldstyleMods.txt 
+*/
+
+        /* Elements */
+body    { 
+        background-color: #fffff5;
+        font-family:    "Verdana", "Myriad Web", "Syntax", sans-serif;
+        font-size-adjust: .58; 
+        margin:         1.5em 5%;
+        }
+p       {
+        margin-top:     .75em;
+        margin-bottom:  .75em;
+        }
+h1      {       
+        font-family:    "Georgia", "Minion Web", "Palatino", 
+                        "Book Antiqua", "Utopia", "Times New Roman",
+                        serif;
+        font-size-adjust: .4;
+        font-size:      2.0em;
+        font-weight:    600;
+        color:          #C00;
+        }
+hr      {
+        height:         1px;
+        background-color: #999;
+        border-style:   none;
+        }
+
+        /* Hyperlinks */
+a       {
+        font-weight:    bold;
+        text-decoration: none;
+        }
+a:link  {       
+        color:          #33F;
+        background:     #fffff5;
+        }       
+a:visited {     
+        color:          #93C;
+        background:     #fffff5;
+        }       
+a:active {      
+        color:          black;
+        background:     #ccf;
+        }       
+a:hover {       
+        color:          #fffff5;
+        background:     #33F;
+        }       
+
+        /* Classes for view-blog page */
+.imgcentered {
+        width:          438px;
+        margin-left:    auto; 
+        margin-right:   auto;
+        }
+.bodycentered { 
+        width:          660px; 
+        margin-left:    auto; 
+        margin-right:   auto;
+        }
+.leftbody {
+        width:          410px; 
+        float:          left;
+        }
+.rightbody {
+        width:          230px; 
+        float:          right;
+        }
+.entry  {
+        margin-top:     .75em;
+        margin-bottom:  .75em;
+        }
+.datetime {
+        color:          #999;
+        font-size:      x-small;
+        }
+.entrytitle {
+        /* based on h2 of Oldstyle */
+        font-family:    "Georgia", "Minion Web", "Palatino", 
+                        "Book Antiqua", "Utopia", "Times New Roman", 
+                        serif;
+        font-size-adjust: .4;
+        font-size:      1.75em;
+        font-weight:    500;
+        color:          #C00;
+        margin-top:     .25em;
+        }
+.entrybody {
+        font-size:      small;
+        }
+        /* For displaying a quote */
+.dquote { 
+        float:          left;
+        font-size:      larger;
+        padding:        1px;
+        margin-right:   5px;
+        width:          10em;
+        border-style:   dotted;
+        border-left-style: none;
+        border-color:   #999;
+        }
+        /* Class for login-required page */
+.warning {      
+        font-weight:    bolder;
+        background:     #FF0;
+        color:  red;
+        }

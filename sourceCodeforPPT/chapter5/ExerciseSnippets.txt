@@ -1,0 +1,25 @@
+5.6
+  <body id="body1">
+    <div id="div1">
+      <button type="button" id="button1">
+        Click Me
+      </button>
+    </div>
+  </body>
+
+  function h1(event) {
+  }
+  function h2(event) {
+    event.stopPropagation();
+  }
+  
+  var body1 = document.getElementById("body1");
+  var div1 = document.getElementById("div1");
+  var button1 = document.getElementById("button1");
+  body1.addEventListener("click", h1, true);
+  body1.addEventListener("click", h2, false);
+  div1.addEventListener("click", h1, true);
+  div1.addEventListener("click", h2, false);
+  button1.addEventListener("click", h2, true);
+  button1.addEventListener("click", h1, false);
+

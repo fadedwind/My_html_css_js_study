@@ -1,0 +1,29 @@
+/* Headers have dark background */
+
+h1,h2,h3,h4,h5,h6 { background-color:purple }
+
+/* All elements bold */
+
+* { font-weight:bold }
+
+/* Elements with certain id's have light background */
+
+#p1, #p3 { background-color:aqua }
+
+/* Elements in certain classes are italic, large font,
+   or both */
+
+#p4, .takeNote { font-style:italic }
+span.special { font-size:x-large }
+
+/* Hyperlink ('a' element) styles */
+
+a:link { color:black }
+a:visited { color:yellow }
+a:hover { color:green }
+a:active { color:red }
+
+/* Descendant selectors */
+
+ul span { font-variant:small-caps }
+ul ol li { letter-spacing:1em }

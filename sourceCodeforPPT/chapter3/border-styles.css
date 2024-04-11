@@ -1,0 +1,11 @@
+/* border-styles.css */
+#p1 {
+        background-color: yellow;
+        border: 6px maroon;
+        border-style: solid dashed dotted double 
+}
+
+#p2 {
+        border: 16px teal;
+        border-style: groove inset outset ridge
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html 
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <title>
+      HostObjects.html
+    </title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <script type="text/javascript" src="HostObjects.js">
+    </script>
+  </head> 
+  <body onload="init();">
+    <p>
+      <label>
+      Pop-up will close in <span id="countdown">10</span> seconds unless
+      you click this button:&nbsp;
+        <button type="button" onclick="resetCountdown();">Click to reset timer</button>
+      </label>
+    </p>
+  </body> 
+</html> 
